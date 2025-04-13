@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="9"/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-10 11:27:15 "/>
+        <attribute name="created" value="dXNlcjtXSU4tN0FIRUxKQzlDRU47MjAyNS0wNC0xMDsiMTE6MjI6NDcgIjsyNjY1"/>
+        <attribute name="edited" value="dXNlcjtXSU4tN0FIRUxKQzlDRU47MjAyNS0wNC0xMDsiMTE6Mjc6MTUgIjsxOzI3NzM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <output expression="&quot;insert a&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;insert b&quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="a &gt; b">
+                <then>
+                    <assign variable="c" expression="a"/>
+                    <assign variable="a" expression="b"/>
+                    <assign variable="b" expression="c"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;a: &quot; &amp; a" newline="True"/>
+            <output expression="&quot;b: &quot; &amp; b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
